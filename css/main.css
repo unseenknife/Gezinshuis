@@ -1,0 +1,412 @@
+/* ============== GLOBAL ============== */
+
+body {
+    background-image: url(../img/backgrond/2.jpg);
+    background-attachment: fixed;
+    /* min-height: 100%; */
+}
+
+/* ============== NAVBAR ============== */
+
+#mainNav {
+    background-color: rgba(255, 255, 255, .8);
+    height: 100px;
+    border-bottom: solid 1px #777;
+    padding: 10px 20%;
+}
+
+#logo {
+    /* max-width: 40%; */
+    max-height: 60px;
+}
+
+.navbar-collapse {
+    max-width: 90%;
+    z-index: 1;
+}
+
+.collapsing,
+.show {
+    background-color: #fff;
+    border: solid 1px #777;
+    border-radius: 3px;
+}
+
+a.navbar-brand {
+    max-width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: grey;
+    white-space: nowrap;
+    font-size: 2em;
+    text-transform: lowercase;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:focus,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:active {
+    font-size: 2em;
+    color: black;
+    transition: color .2s;
+}
+
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link,
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:focus {
+    color: gray;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+#mainNav .dropdown img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.navbar .dropdown {
+    text-transform: lowercase;
+    top: 3px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.navbar .dropdown.show {
+    border: none;
+}
+
+.navbar .dropdown a {
+    font-size: 2em;
+    color: gray;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .dropdown-menu {
+    font-size: .7em;
+}
+
+.hideable {
+    display: inline;
+}
+
+/* ============== SIDENAV ============== */
+
+#sideNav {
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    width: 70px;
+    top: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    text-align: center;
+    z-index: 2000;
+}
+
+#sideNav .navbar-toggler {
+    background-color: #555555;
+}
+
+#sideNav img {
+    max-width: 40px;
+}
+
+
+#sideNav .link-item {
+    width: 80%;
+    margin: 0;
+}
+
+/* #sideNav .link-icon {
+    width: 10%;
+    margin-right: 5px;
+    font-size: 2em;
+} */
+
+.menuImg {
+    /* padding: 20px 0; */
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#navbarSideMenu {
+    background-color: #1f1f1f;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    /* margin-right: 15%; */
+}
+
+#navbarSideMenu ul {
+    margin-top: 30px;
+    /* align-self: center; */
+}
+
+#sideNav .nav-link {
+    color: grey;
+    white-space: nowrap;
+    font-size: 1.5em;
+    margin-left: 0;
+}
+
+#sideNav .nav-link:hover,
+#sideNav .nav-link:active,
+#sideNav .nav-link:focus,
+#sideNav .li.nav-item a.nav-link:hover,
+#sideNav .li.nav-item a.nav-link:focus,
+#sideNav .li.nav-item a.nav-link:active {
+    font-size: 1.5em;
+    color: white;
+    transition: color .2s;
+}
+
+#sideNav .li.nav-item a.nav-link,
+#sideNav .li.nav-item a.nav-link:focus {
+    color: gray;
+}
+
+.tooltip {
+    z-index: 5000;
+    background-color: transparent;
+    border: none;
+}
+
+.tooltip .tooltip-inner {
+    background-color: black;
+}
+
+.tooltip .tooltip-arrow {
+    background-color: black;
+}
+
+/* ============== SECTIONS ============== */
+
+section {
+    padding: 20px;
+}
+
+section:first-of-type {
+    margin-top: 100px;
+}
+
+.header {
+    padding: 100px 0;
+}
+
+#home {
+    background-color: #fff;
+}
+
+.userpage {
+    padding: 0;
+}
+
+/* ============== CONTAINER ============== */
+
+.content {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 50px 10px;
+    border-radius: 3px;
+}
+
+/* ============== GALERY ============== */
+
+.content_gallery {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 50px 40px;
+    border-radius: 7px;
+}
+
+.box {
+    margin-bottom: 25px;
+}
+
+.resize {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.user img {
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img{
+    text-align: center;
+}
+
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+
+/* ============== USER PAGE ============== */
+
+.user {
+    margin-left: 70px;
+}
+
+.user #mainNav {
+    position: static;
+    margin-bottom: 100px;
+}
+
+.user .navbar-collapse {
+    max-width: none;
+}
+
+/* ============== HEADINGS ============== */
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* ============== FORMS ============== */
+
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.alert p {
+    margin: 0;
+}
+
+/* ============== FOOTER ============== */
+
+.footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: .9em;
+    color: #777;
+    bottom: 0;
+}
+
+footer {
+    padding: 10px 0;
+    bottom: 0;
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+
+@media only screen and (max-width: 1024px) {
+
+    #mainNav {
+        padding: 0 5%;
+    }
+
+    .user #mainNav {
+        padding: none;
+    }
+
+    #sideNav {
+        width: 50px;
+    }
+
+    .user {
+        margin-left: 50px;
+    }
+
+    .content {
+        padding: 30px 10px;
+    }
+
+    .resize {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .header {
+        padding: 50px 0 30px;
+    }
+
+    .resize {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .hideable {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    #sideNav {
+        width: 30px;
+        font-size: .8em;
+    }
+
+    .user {
+        margin-left: 30px;
+    }
+
+    #navbarSideMenu {
+        width: 30px;
+    }
+
+    .navbar-collapse {
+        margin-left: 30px;
+        font-size: .6em;
+    }
+
+    .menuImg {
+        margin-bottom: 30px;
+    }
+
+    .menuImg img {
+        width: 30px;
+    }
+
+    .nav-link {
+        padding: 0.2rem 0;
+    }
+
+    .content {
+        padding: 15px 15px;
+    }
+
+    .header {
+        padding: 50px 0 0;
+    }
+
+    a.navbar-brand {
+        max-width: 80%;
+    }
+
+    #logo {
+        max-width: 80%;
+        max-height: 60px;
+    }
+
+}
